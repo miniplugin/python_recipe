@@ -1,5 +1,6 @@
-#### 기존 파이썬에 대해서1(기초) 
-- https://blog.daum.net/web_design/496
+#### 기존 파이썬에 대해서(기초) 
+- 파이썬에 대해서1: https://blog.daum.net/web_design/496
+- 파이썬에 대해서2: https://blog.daum.net/web_design/768
 - 위 글에 이어서 파이썬 활용에 대해서 인프런의 파이썬 레시피 라는 강좌를 기초로 정리하겠습니다.(아래)
 
 #### 20211003(일)
