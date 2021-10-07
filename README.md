@@ -3,7 +3,7 @@
 - 파이썬에 대해서2: https://blog.daum.net/web_design/768
 - 위 글에 이어서 파이썬 활용에 대해서 인프런의 파이썬 레시피 라는 강좌를 기초로 정리하겠습니다.(아래)
 
-#### 20211007(목)
+#### 20211007(목): 02_selenium/1to50.py
 - 파이썬 자동화: selenium 으로 외부프로그램 실행(크롬 웹 자동화)
 - 파이참 > File > Settings > Python Interpreter > selenium 모듈 설치
 - 크롬 드라이버 설치: 웹 브라우저 제어용 프로그램. 현재 버전 94 다운로드
@@ -11,7 +11,7 @@
 - 작업결과(아래)
   ![ex_screenshot](./README/img.png)
 
-#### 20211006(수)
+#### 20211006(수): 01_bs4/naver_webtoon_thumbnail.py
 - urllib.request 스텁에서 가져온 함수 urlretrieve 를 사용해서 이미지파일 다운로드.
 - 스텁 (*.pyi) 파일 이란 참조: https://www.python.org/dev/peps/pep-0484/#stub-files
 
