@@ -8,7 +8,7 @@
 - 파이참 > File > Settings > Python Interpreter > selenium 모듈 설치
 - 크롬 드라이버 설치: 웹 브라우저 제어용 프로그램. 현재 버전 94 다운로드
 - https://chromedriver.chromium.org/downloads (현재 기준 버전 94.x.x)
-- 작업결과(아래)
+- 작업결과(아래확인: 크롬브라우저 상단에 'Chrome 이 자동화된 테스트 소프트웨어에 의해 제어되고 있습니다.')
   ![ex_screenshot](./README/img.png)
 
 #### 20211006(수): 01_bs4/naver_webtoon_thumbnail.py
