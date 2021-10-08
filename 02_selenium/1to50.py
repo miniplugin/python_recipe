@@ -1,17 +1,25 @@
-# //*[@id="search"] # 크롬 Copy > X path 로 붙여 넣은 값 사용
-import time
+# 1 to 50 웹게임을 자동화 해서 실행하는 파이썬 프로그램
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 
 driver = webdriver.Chrome('chromedriver')
-driver.get("https://www.youtube.com/")
+driver.get("https://zzzscore.com/1to50/")
+driver.implicitly_wait(300)
 
-time.sleep(3)
-# 검색어 창을 찾아 search 변수에 저장
-search = driver.find_element_by_xpath('//input[@id="search"]')
-# search = driver.find_element_by_name("search_query")
-
-# 위 search 변수에 값을 전송
-search.send_keys('kpop dance cover')
-time.sleep(1)
-search.send_keys(Keys.ENTER)
+# 전역변수: 버튼에 매핑되는 현재 숫자
+num = 1
+def clickBtn(): # 함수생성
+    global num
+    btns = driver.find_elements_by_xpath('//*[@id="grid"]/div[*]')
+    # print(len(btns))
+    # print(btns[0].text)
+    for btn in btns:
+        # if btn.text == "1":
+        print(btn.text, end='\t')
+        if btn.text == str(num):
+            btn.click()
+            print(True)
+            num = num + 1
+            return # 함수종료
+# 메인실행
+while num<=50:
+    clickBtn()
