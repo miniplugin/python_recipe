@@ -3,7 +3,11 @@
 - 파이썬에 대해서2: https://blog.daum.net/web_design/768
 - 위 글에 이어서 파이썬 활용에 대해서 인프런의 파이썬 레시피 라는 강좌를 기초로 정리하겠습니다.(아래)
 
-#### 20211007(목): 02_selenium/1to50.py
+#### 20211008(금): 02_selenium/1to50.py
+- 1 to 50 웹게임을 자동화 해서 실행하는 파이썬 프로그램
+- 함수생성과 함수 내에서 전역변수 사용하기
+
+#### 20211007(목): 02_selenium/auto_youtube.py
 - 파이썬 자동화: selenium 으로 외부프로그램 실행(크롬 웹 자동화)
 - 파이참 > File > Settings > Python Interpreter > selenium 모듈 설치
 - 크롬 드라이버 설치: 웹 브라우저 제어용 프로그램. 현재 버전 94 다운로드

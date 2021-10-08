@@ -8,7 +8,7 @@ driver.implicitly_wait(300)
 # 전역변수: 버튼에 매핑되는 현재 숫자
 num = 1
 def clickBtn(): # 함수생성
-    global num
+    global num # 함수 내에서 전역변수 사용하기
     btns = driver.find_elements_by_xpath('//*[@id="grid"]/div[*]')
     # print(len(btns))
     # print(btns[0].text)
