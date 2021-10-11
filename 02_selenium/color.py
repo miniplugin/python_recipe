@@ -8,6 +8,14 @@ driver = webdriver.Chrome('chromedriver')
 driver.get('http://zzzscore.com/color/')
 driver.implicitly_wait(300)
 
+# description element 까지 스크롤
+# driver.execute_script('window.scrollTo(0, document.querySelector("#grid").offsetHeight)')
+temp = '''
+    var location = document.querySelector("#grid").offsetHeight;
+    window.scrollTo(0, location);
+'''
+driver.execute_script(temp)
+
 btns = driver.find_elements_by_xpath('//*[@id="grid"]/div')
 # print(len(btns))
 # print(btns[0].value_of_css_property('background-color'))

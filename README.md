@@ -3,7 +3,21 @@
 - 파이썬에 대해서2: https://blog.daum.net/web_design/768
 - 위 글에 이어서 파이썬 활용에 대해서 인프런의 파이썬 레시피 라는 강좌를 기초로 정리하겠습니다.(아래)
 
-#### 20211010(일):
+### 20211011(월): 02_selenium/color_bot.py
+- 배너닫기 문제가 아니고, 개체가 화면에 모두 보여야 문제 없음.
+- 그래서, 화면을 해당하는 개체로 상단 이동하게 처리(아래)
+```json
+# description element 까지 스크롤(아래 1줄 사용)
+# driver.execute_script('window.scrollTo(0, document.querySelector("#grid").offsetHeight)')
+# 자바스크립트를 여러줄 사용시(아래)
+temp = '''
+    var location = document.querySelector("#grid").offsetHeight;
+    window.scrollTo(0, location);
+'''
+driver.execute_script(temp)
+```
+
+#### 20211010(일): 02_selenium/color.py
 - 색감 테스트: 주어진 시간안에 다른 색을 선택하기
 - 단, 실행후 배너창을 닫아야 합니다.(배너닫기 봇을 추가해 봅니다.)
 
