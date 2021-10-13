@@ -7,7 +7,7 @@ sendEmail = "네이버 이메일"
 recvEmail = "받는 사용자 이메일"
 password = "사용자 개인 비번"
 
-# 메일서버정보: https://help.naver.com/support/contents/contents.help?serviceNo=2342&categoryNo=2288
+# 메일서버보안헤제정보: https://help.naver.com/support/contents/contents.help?serviceNo=2342&categoryNo=2288
 smtpName = "smtp.naver.com" # smtp 서버 주소
 smtpPort = 587 # smtp 서비스 포트
 
